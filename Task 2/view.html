@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c57dc26725.js" crossorigin="anonymous"></script>
+   <style>
+        * {
+            transition: all 0.2s;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+       header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #2874F0;
+        color: #fff;
+       }
+       header ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+       }
+       header h4 a {
+        color: #fff;
+        text-decoration: none;
+       }
+       header ul li {
+        margin: 0 5px;
+       }
+       header ul a {
+        color: #fff;
+        text-decoration: none;
+       }
+       main {
+        padding: 20px;
+       }
+       main section {
+        display: flex;
+       }
+       main section img {
+        max-width: 25vw;
+        width: auto;
+        height: auto;
+       }
+       main section i {
+    color: #FEA21C;
+       }
+       main section button {
+        border: none;
+    margin: 4px;
+    padding: 8px 14px;
+    border-radius: 3px;
+    display: inline;
+    transition: all 0.2s;
+       }
+       main section button:hover {
+        border: none;
+    margin: 4px;
+    padding: 8px 14px;
+    border-radius: 3px;
+    display: inline;
+    transition: all 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+       }
+       #wishlistBtn:hover {
+        cursor: pointer;
+       }
+       @media only screen and (max-width:800px) {
+        main section {
+            display: block;
+        }
+        main section img {
+            max-width: 90%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h4><a href="index.html">E-commerce</a></h4>
+        <nav>
+            <ul>    
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img id="image" src="#" />
+            <div>
+                <h5 id="name"></h5>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>(5.0)</p>
+                <h4 id="price"></h4>
+                <button>Buy Now</button>
+                <button id="wishlistBtn" onclick="addWishlist(productName,productPrice, productImage)">Add to Wishlist</button>
+                <br>
+                <br>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        let searchParams = new URLSearchParams(window.location.search);
+        let productName = searchParams.get("name");
+        let productPrice = searchParams.get("price");
+        let productImage = searchParams.get("img");
+
+        document.getElementById("name").innerHTML = productName;
+        document.getElementById("price").innerHTML = "&#8377 " + productPrice;
+        document.getElementById("image").src = productImage;
+    </script>
+    <script src="./addWishlist.js"></script>
+</body>
+</html>

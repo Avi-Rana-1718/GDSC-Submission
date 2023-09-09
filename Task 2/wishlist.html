@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c57dc26725.js" crossorigin="anonymous"></script>
+   <style>
+        * {
+            transition: all 0.2s;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+       header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #2874F0;
+        color: #fff;
+       }
+       header h4 a {
+        color: #fff;
+        text-decoration: none;
+       }
+       header ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+       }
+       header ul li {
+        margin: 0 5px;
+       }
+       header ul a {
+        color: #fff;
+        text-decoration: none;
+       }
+       main {
+        padding: 20px;
+       }
+       main ul {
+        flex-wrap: wrap;
+    display: flex;
+    padding: 0;
+    margin: 0;
+       }
+       main ul li {
+        border: 1px solid #888;
+    box-shadow: 4px 4px #888;
+width: 230px;
+background: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    padding: 15px;
+    margin: 5px;
+    overflow: hidden;
+    transition: all 0.2s;
+       }
+       main ul li img {
+        max-width: 270px;
+    background-color: #f8f8f8;
+    display: inline;
+       }
+       main ul li a {
+        background-color: #F0F0F0;
+    margin: 4px;
+    width: 100%;
+    padding: 8px 6px;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s;
+       }
+       main ul li a:hover {
+        background-color: #888;
+    color: #f8f8f8;
+    transition: all 0.2s;
+       }
+       main i {
+        font-size: small;
+    color: #FEA21C;
+       }
+       @media only screen and (max-width:800px) {
+        #wishlist li {
+            width: 90%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h4><a href="index.html">E-commerce</a></h4>
+        <nav>
+            <ul>    
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h5>My Wishlist</h5>
+        <main>
+            <span id="message"></span>
+            <div>
+                <ul id="wishlist"></ul>
+            </div>
+        </main>
+    </main>
+    <script src="./wishlist.js"></script>
+</body>
+</html>

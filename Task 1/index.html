@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c57dc26725.js" crossorigin="anonymous"></script>
+   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        * {
+            transition: all 0.2s;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        header {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+        header img {
+            width: 12rem;
+        }
+        header ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        header ul li {
+            margin: 5px;
+            padding: 3px;
+        }
+        header ul li a {
+            text-decoration: none;
+            color: #202124;
+
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        header a {
+            text-decoration: none;
+        }
+        #banner {
+            display: flex;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        #banner div h4 {
+            color: #1A73E8;
+        }
+        #banner div small {
+            max-width: 50vw;
+        }
+        #banner img {
+            max-width: 50vw;
+
+        }
+        #banner a {
+            background-color: #1A73E8;
+            text-decoration: none;
+            color: #fff;
+            padding: 7px 16px;
+            border-radius: 3px;
+        }
+        #banner a.secondary {
+            color: #1A73E8;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        @media only screen and (max-width:800px) {
+            #banner {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            #banner img {
+                max-width: 90vw;
+            }
+            header ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h4>Authentication</h4>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div>
+        <a href="login.html">Sign in</a>
+    </div>
+   </header>
+
+   <section id="banner">
+    <div>
+        <h4>Auth example for GDSC</h4>
+        <small>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.        </small>
+        <br><br>
+        <a href="login.html">Login <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a class="secondary" href="sign.html">Sign up</a>
+    </div>
+    <img src="https://developers.google.com/community/gdsc/images/gdsc-social-share.png" />
+   </section>
+
+   <script src="./auth.js"></script>
+</body>
+</html>

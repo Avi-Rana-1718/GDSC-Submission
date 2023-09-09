@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c57dc26725.js" crossorigin="anonymous"></script>
+   <style>
+        * {
+            transition: all 0.2s;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+       header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #2874F0;
+        color: #fff;
+       }
+       header ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+       }
+       header ul li {
+        margin: 0 5px;
+       }
+       header ul a {
+        color: #fff;
+        text-decoration: none;
+       }
+       #banner {
+        background-color: #CAE1E9;
+        padding: 10px;
+        border-radius: 3px;
+        margin: 10px;
+       }
+       #banner button {
+        border: none;
+        display: block;
+        margin-top: 10px;
+        padding: 7px;
+        border-radius: 3px;
+       }
+       section ul {
+        flex-wrap: wrap;
+    display: flex;
+       }
+       section ul li {
+        border: 1px solid #888;
+    box-shadow: 4px 4px #888;
+width: 230px;
+background: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    padding: 15px;
+    margin: 5px;
+    overflow: hidden;
+    transition: all 0.2s;
+       }
+       section ul li img {
+        max-width: 270px;
+    background-color: #f8f8f8;
+    display: inline;
+       }
+       section ul li a {
+        background-color: #F0F0F0;
+    margin: 4px;
+    width: 100%;
+    padding: 8px 6px;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s;
+       }
+       section ul li a:hover {
+        background-color: #888;
+    color: #f8f8f8;
+    transition: all 0.2s;
+       }
+       section i {
+        font-size: small;
+    color: #FEA21C;
+       }
+       @media only screen and (max-width:800px) {
+        section ul li {
+            width: 90%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h4>E-commerce</h4>
+        <nav>
+            <ul>    
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="banner">
+            <h4>Offers starting  @ 999</h4>
+            <small>On selected items</small>
+            <button>Shop now</button>
+        </div>
+        <section>
+            <ul>
+                <li>
+                    <img src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61C1eSRsptL._AC_UY327_FMwebp_QL65_.jpg" />
+            <div>
+                <span>HP Victus AMD Ryzen 7-5800H</span>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>(5.0)</p>
+                <h4>&#8377 1,08,250</h4>
+                <a href="view.html?name=HP Victus AMD Ryzen 7-5800H&price=1,08,250&img=https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61C1eSRsptL._AC_UY327_FMwebp_QL65_.jpg">Buy Now</a>
+            </div>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/I/719C6bJv8jL._AC_UY327_FMwebp_QL65_.jpg">
+            <div>
+                <span>2022 Apple MacBook Air Laptop with M2 chip</span>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>(5.0)</p>
+                <h4>&#8377 1,05,500</h4>
+                <a href="view.html?name=2022 Apple MacBook Air Laptop with M2 chip&price=1,05,500&img=https://m.media-amazon.com/images/I/719C6bJv8jL._AC_UY327_FMwebp_QL65_.jpg">Buy Now</a>
+            </div>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91d75JiCH9L._AC_UY327_FMwebp_QL65_.jpg">
+            <div>
+                <span>HP 14s, Intel Celeron N4500</span>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>(2.5)</p>
+                <h4>&#8377 28,990</h4>
+                <a href="view.html?name=HP 14s, Intel Celeron N4500&price=28,990&img=https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91d75JiCH9L._AC_UY327_FMwebp_QL65_.jpg">Buy Now</a>
+            </div>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61q6x-ll5FL._AC_UY327_FMwebp_QL65_.jpg">
+            <div>
+                <span>Lenovo Ideapad 3 AMD Ryzen 5 5500U</span>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>(4.0)</p>
+                <h4>&#8377 43,014</h4>
+                <a href="view.html?name=Lenovo Ideapad 3 AMD Ryzen 5 5500U&price=43,014&img=https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61q6x-ll5FL._AC_UY327_FMwebp_QL65_.jpg">Buy Now</a>
+            </div>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91zVSkGGZbS._AC_UY327_FMwebp_QL65_.jpg">
+            <div>
+                <span>ASUS TUF Gaming A15</span>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>(4.3)</p>
+                <h4>&#8377 95,999</h4>
+                <a href="view.html?name=ASUS TUF Gaming A15&price=95,999&img=https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91zVSkGGZbS._AC_UY327_FMwebp_QL65_.jpg">Buy Now</a>
+            </div>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/I/61wqYsqU6AL._AC_UY327_QL65_.jpg">
+            <div>
+                <span>Samsung Galaxy Book2 Intel 12th Gen core i5</span>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>(4.1)</p>
+                <h4>&#8377 59,490</h4>
+                <a href="view.html?name=Samsung Galaxy Book2 Intel 12th Gen core i5&price=59,490&img=https://m.media-amazon.com/images/I/61wqYsqU6AL._AC_UY327_QL65_.jpg">Buy Now</a>
+            </div>
+                </li>
+                <li>
+                    <img src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91qc0iDjsVL._SX679_.jpg">
+            <div>
+                <span>HP Chromebook X360 Intel Celeron N4020</span>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>(3.5)</p>
+                <h4>&#8377 25,324</h4>
+                <a href="view.html?name=HP Chromebook X360 Intel Celeron N4020&price=25,324&img=https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91qc0iDjsVL._SX679_.jpg">Buy Now</a>
+            </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
